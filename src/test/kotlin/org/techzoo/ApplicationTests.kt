@@ -1,4 +1,4 @@
-package org.techzoo.org.techzoo
+package org.techzoo
 
 import org.junit.Test
 import org.junit.runner.RunWith

@@ -17,7 +17,7 @@ class PersonController(private val repository: PersonRepository) {
 	fun findAll() = repository.getAll()
 
 	@GetMapping("/{firstname}")
-	fun findPerson(@PathVariable firstname: String) = repository.get(firstname)
+	fun findPerson(@PathVariable firstname: String) = repository.getPerson(firstname)
 	
 	@PutMapping("/person")
 	fun addPerson(@RequestBody person: Person) = repository.add(person)

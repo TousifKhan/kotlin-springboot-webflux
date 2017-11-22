@@ -12,6 +12,6 @@ class PersonRepository {
 	)
 	
 	fun add(person: Person) = entities.add(person)
-	fun get(firstname: String) = entities.find { it.firstname == firstname } ?: "person not found!"
-	fun getAll() = listOf(entities)
+	fun getPerson(firstname: String):Person = entities.find { it.firstname == firstname } ?: Person("","")
+	fun getAll() = entities.toList()
 }
